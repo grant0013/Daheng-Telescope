@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>Daheng_Telescope</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="GxIAPINET">
+      <HintPath>..\..\..\..\..\..\Program Files\Daheng Imaging\GalaxySDK\Samples\CSharp SDK\x64\DoNET\.NET4.0\GxIAPINET.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
