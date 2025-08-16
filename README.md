@@ -1,6 +1,27 @@
 Daheng Telescope Control
 This application is a comprehensive astrophotography capture tool designed to control Daheng Imaging cameras using the GxIAPINET SDK. It has evolved from a basic camera viewer into a powerful utility with features tailored for capturing high-quality celestial images.
 
+Getting Started
+To get started with this project, you will need Visual Studio and the Daheng Imaging SDK installed on your system.
+
+Prerequisites
+Microsoft Visual Studio: The project is built with C# and Windows Forms.
+
+Daheng Imaging SDK: The GxIAPINET.dll library must be installed and referenced by the project.
+
+A compatible Daheng Imaging industrial camera.
+
+Installation
+Clone the repository to your local machine:
+
+git clone https://github.com/grant0013/Daheng-Telescope.git
+
+Open the Daheng-Telescope.sln file in Visual Studio.
+
+Ensure that the reference to GxIAPINET.dll is correctly resolved. You may need to add the reference manually if the SDK was installed in a non-standard location.
+
+Build and run the project.
+
 Core Functionality
 Camera Connection: Automatically detects and connects to the first available Daheng Imaging camera.
 
