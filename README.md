@@ -7,20 +7,24 @@ To get started with this project, you will need Visual Studio and the Daheng Ima
 Prerequisites
 Microsoft Visual Studio: The project is built with C# and Windows Forms.
 
-Daheng Imaging SDK: The GxIAPINET.dll library must be installed and referenced by the project.
+Daheng Imaging SDK: You must download and install the official Daheng Imaging SDK for your operating system. An account is required for the download.
+
+Visit the Daheng Imaging Download Center to register and download the appropriate SDK package.
 
 A compatible Daheng Imaging industrial camera.
 
 Installation
-Clone the repository to your local machine:
+Install the Daheng SDK: Before proceeding, ensure you have successfully installed the SDK downloaded from the Daheng Imaging website.
+
+Clone the Repository:
 
 git clone https://github.com/grant0013/Daheng-Telescope.git
 
-Open the Daheng-Telescope.sln file in Visual Studio.
+Open in Visual Studio: Open the Daheng-Telescope.sln file in Visual Studio.
 
-Ensure that the reference to GxIAPINET.dll is correctly resolved. You may need to add the reference manually if the SDK was installed in a non-standard location.
+Resolve the DLL Reference: The project will look for the GxIAPINET.dll file. If the SDK was installed correctly, this reference should resolve automatically. If not, you will need to manually add a reference to the GxIAPINET.dll file from the SDK's installation directory.
 
-Build and run the project.
+Build and Run: Build the project (F6) and run (F5).
 
 Core Functionality
 Camera Connection: Automatically detects and connects to the first available Daheng Imaging camera.
@@ -58,12 +62,11 @@ Histogram Stretch: Sliders for Gamma, Contrast, and Brightness.
 Manual Color Balance: Red, Green, and Blue sliders to provide precise control for neutralizing color casts, especially useful for cameras with their IR cut filter removed.
 
 User Interface
-Tabbed Layout: All camera controls are organized into a clean, multi-tabbed interface for easy navigation. The tabs are logically grouped into:
-
-Camera: Core settings like Exposure, Gain, White Balance, Pixel Format, and Binning.
-
-Live View: Real-time display adjustments.
-
-Capture & Saving: Controls for recording, raw capture, and file locations.
+Tabbed Layout: All camera controls are organized into a clean, multi-tabbed interface for easy navigation.
 
 Real-time Feedback: The UI provides constant feedback, such as changing button colors to indicate active states (e.g., "Record" turns red) and updating labels with live data.
+
+License
+The source code for this application is licensed under the MIT License.
+
+IMPORTANT: This project depends on the Daheng Imaging SDK. The GxIAPINET.dll and other necessary SDK files are not included in this repository. You must download the SDK directly from Daheng Imaging and agree to their End-User License Agreement (EULA).
